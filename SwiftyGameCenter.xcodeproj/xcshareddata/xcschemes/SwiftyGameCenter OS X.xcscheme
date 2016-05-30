@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D97EF75C1CFCACCA00F6A5EF"
+               BlueprintIdentifier = "D97EF79A1CFCB01000F6A5EF"
                BuildableName = "SwiftyGameCenter.framework"
-               BlueprintName = "SwiftyGameCenter"
+               BlueprintName = "SwiftyGameCenter OS X"
                ReferencedContainer = "container:SwiftyGameCenter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D97EF7661CFCACCA00F6A5EF"
-               BuildableName = "SwiftyGameCenterTests.xctest"
-               BlueprintName = "SwiftyGameCenterTests"
+               BlueprintIdentifier = "D97EF7A31CFCB01100F6A5EF"
+               BuildableName = "SwiftyGameCenter OS X Tests.xctest"
+               BlueprintName = "SwiftyGameCenter OS X Tests"
                ReferencedContainer = "container:SwiftyGameCenter.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D97EF75C1CFCACCA00F6A5EF"
+            BlueprintIdentifier = "D97EF79A1CFCB01000F6A5EF"
             BuildableName = "SwiftyGameCenter.framework"
-            BlueprintName = "SwiftyGameCenter"
+            BlueprintName = "SwiftyGameCenter OS X"
             ReferencedContainer = "container:SwiftyGameCenter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D97EF75C1CFCACCA00F6A5EF"
+            BlueprintIdentifier = "D97EF79A1CFCB01000F6A5EF"
             BuildableName = "SwiftyGameCenter.framework"
-            BlueprintName = "SwiftyGameCenter"
+            BlueprintName = "SwiftyGameCenter OS X"
             ReferencedContainer = "container:SwiftyGameCenter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D97EF75C1CFCACCA00F6A5EF"
+            BlueprintIdentifier = "D97EF79A1CFCB01000F6A5EF"
             BuildableName = "SwiftyGameCenter.framework"
-            BlueprintName = "SwiftyGameCenter"
+            BlueprintName = "SwiftyGameCenter OS X"
             ReferencedContainer = "container:SwiftyGameCenter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

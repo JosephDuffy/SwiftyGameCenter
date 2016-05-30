@@ -10,6 +10,8 @@
 		D97EF7611CFCACCA00F6A5EF /* SwiftyGameCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = D97EF7601CFCACCA00F6A5EF /* SwiftyGameCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D97EF7681CFCACCA00F6A5EF /* SwiftyGameCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97EF75D1CFCACCA00F6A5EF /* SwiftyGameCenter.framework */; };
 		D97EF76D1CFCACCA00F6A5EF /* SwiftyGameCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF76C1CFCACCA00F6A5EF /* SwiftyGameCenterTests.swift */; };
+		D97EF7881CFCAE9F00F6A5EF /* SwiftyGameCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97EF77E1CFCAE9F00F6A5EF /* SwiftyGameCenter.framework */; };
+		D97EF7A51CFCB01100F6A5EF /* SwiftyGameCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97EF79B1CFCB01000F6A5EF /* SwiftyGameCenter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,15 +22,33 @@
 			remoteGlobalIDString = D97EF75C1CFCACCA00F6A5EF;
 			remoteInfo = SwiftyGameCenter;
 		};
+		D97EF7891CFCAE9F00F6A5EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D97EF7541CFCACCA00F6A5EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D97EF77D1CFCAE9F00F6A5EF;
+			remoteInfo = "SwiftyGameCenter tvOS";
+		};
+		D97EF7A61CFCB01100F6A5EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D97EF7541CFCACCA00F6A5EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D97EF79A1CFCB01000F6A5EF;
+			remoteInfo = "SwiftyGameCenter OSX";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D97EF75D1CFCACCA00F6A5EF /* SwiftyGameCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGameCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97EF7601CFCACCA00F6A5EF /* SwiftyGameCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGameCenter.h; sourceTree = "<group>"; };
 		D97EF7621CFCACCA00F6A5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D97EF7671CFCACCA00F6A5EF /* SwiftyGameCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGameCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97EF7671CFCACCA00F6A5EF /* SwiftyGameCenter iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyGameCenter iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97EF76C1CFCACCA00F6A5EF /* SwiftyGameCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGameCenterTests.swift; sourceTree = "<group>"; };
 		D97EF76E1CFCACCA00F6A5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D97EF77E1CFCAE9F00F6A5EF /* SwiftyGameCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGameCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97EF7871CFCAE9F00F6A5EF /* SwiftyGameCenter tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyGameCenter tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97EF79B1CFCB01000F6A5EF /* SwiftyGameCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGameCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97EF7A41CFCB01100F6A5EF /* SwiftyGameCenter OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyGameCenter OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +67,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D97EF77A1CFCAE9F00F6A5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7841CFCAE9F00F6A5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97EF7881CFCAE9F00F6A5EF /* SwiftyGameCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7971CFCB01000F6A5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7A11CFCB01100F6A5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97EF7A51CFCB01100F6A5EF /* SwiftyGameCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D97EF7531CFCACCA00F6A5EF = {
 			isa = PBXGroup;
 			children = (
-				D97EF75F1CFCACCA00F6A5EF /* SwiftyGameCenter */,
-				D97EF76B1CFCACCA00F6A5EF /* SwiftyGameCenterTests */,
+				D97EF75F1CFCACCA00F6A5EF /* Source */,
+				D97EF76B1CFCACCA00F6A5EF /* Tests */,
 				D97EF75E1CFCACCA00F6A5EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,27 +113,41 @@
 			isa = PBXGroup;
 			children = (
 				D97EF75D1CFCACCA00F6A5EF /* SwiftyGameCenter.framework */,
-				D97EF7671CFCACCA00F6A5EF /* SwiftyGameCenterTests.xctest */,
+				D97EF7671CFCACCA00F6A5EF /* SwiftyGameCenter iOS Tests.xctest */,
+				D97EF77E1CFCAE9F00F6A5EF /* SwiftyGameCenter.framework */,
+				D97EF7871CFCAE9F00F6A5EF /* SwiftyGameCenter tvOS Tests.xctest */,
+				D97EF79B1CFCB01000F6A5EF /* SwiftyGameCenter.framework */,
+				D97EF7A41CFCB01100F6A5EF /* SwiftyGameCenter OS X Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D97EF75F1CFCACCA00F6A5EF /* SwiftyGameCenter */ = {
+		D97EF75F1CFCACCA00F6A5EF /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D97EF7601CFCACCA00F6A5EF /* SwiftyGameCenter.h */,
-				D97EF7621CFCACCA00F6A5EF /* Info.plist */,
+				D97EF7951CFCAEEE00F6A5EF /* Supporting Files */,
 			);
+			name = Source;
 			path = SwiftyGameCenter;
 			sourceTree = "<group>";
 		};
-		D97EF76B1CFCACCA00F6A5EF /* SwiftyGameCenterTests */ = {
+		D97EF76B1CFCACCA00F6A5EF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				D97EF76C1CFCACCA00F6A5EF /* SwiftyGameCenterTests.swift */,
 				D97EF76E1CFCACCA00F6A5EF /* Info.plist */,
 			);
+			name = Tests;
 			path = SwiftyGameCenterTests;
+			sourceTree = "<group>";
+		};
+		D97EF7951CFCAEEE00F6A5EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D97EF7601CFCACCA00F6A5EF /* SwiftyGameCenter.h */,
+				D97EF7621CFCACCA00F6A5EF /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,12 +161,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D97EF77B1CFCAE9F00F6A5EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7981CFCB01000F6A5EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D97EF75C1CFCACCA00F6A5EF /* SwiftyGameCenter */ = {
+		D97EF75C1CFCACCA00F6A5EF /* SwiftyGameCenter iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D97EF7711CFCACCA00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter" */;
+			buildConfigurationList = D97EF7711CFCACCA00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter iOS" */;
 			buildPhases = (
 				D97EF7581CFCACCA00F6A5EF /* Sources */,
 				D97EF7591CFCACCA00F6A5EF /* Frameworks */,
@@ -113,14 +191,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftyGameCenter;
+			name = "SwiftyGameCenter iOS";
 			productName = SwiftyGameCenter;
 			productReference = D97EF75D1CFCACCA00F6A5EF /* SwiftyGameCenter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D97EF7661CFCACCA00F6A5EF /* SwiftyGameCenterTests */ = {
+		D97EF7661CFCACCA00F6A5EF /* SwiftyGameCenter iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D97EF7741CFCACCA00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenterTests" */;
+			buildConfigurationList = D97EF7741CFCACCA00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter iOS Tests" */;
 			buildPhases = (
 				D97EF7631CFCACCA00F6A5EF /* Sources */,
 				D97EF7641CFCACCA00F6A5EF /* Frameworks */,
@@ -131,9 +209,81 @@
 			dependencies = (
 				D97EF76A1CFCACCA00F6A5EF /* PBXTargetDependency */,
 			);
-			name = SwiftyGameCenterTests;
+			name = "SwiftyGameCenter iOS Tests";
 			productName = SwiftyGameCenterTests;
-			productReference = D97EF7671CFCACCA00F6A5EF /* SwiftyGameCenterTests.xctest */;
+			productReference = D97EF7671CFCACCA00F6A5EF /* SwiftyGameCenter iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D97EF77D1CFCAE9F00F6A5EF /* SwiftyGameCenter tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D97EF78F1CFCAE9F00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter tvOS" */;
+			buildPhases = (
+				D97EF7791CFCAE9F00F6A5EF /* Sources */,
+				D97EF77A1CFCAE9F00F6A5EF /* Frameworks */,
+				D97EF77B1CFCAE9F00F6A5EF /* Headers */,
+				D97EF77C1CFCAE9F00F6A5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftyGameCenter tvOS";
+			productName = "SwiftyGameCenter tvOS";
+			productReference = D97EF77E1CFCAE9F00F6A5EF /* SwiftyGameCenter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D97EF7861CFCAE9F00F6A5EF /* SwiftyGameCenter tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D97EF7921CFCAE9F00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter tvOS Tests" */;
+			buildPhases = (
+				D97EF7831CFCAE9F00F6A5EF /* Sources */,
+				D97EF7841CFCAE9F00F6A5EF /* Frameworks */,
+				D97EF7851CFCAE9F00F6A5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D97EF78A1CFCAE9F00F6A5EF /* PBXTargetDependency */,
+			);
+			name = "SwiftyGameCenter tvOS Tests";
+			productName = "SwiftyGameCenter tvOSTests";
+			productReference = D97EF7871CFCAE9F00F6A5EF /* SwiftyGameCenter tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D97EF79A1CFCB01000F6A5EF /* SwiftyGameCenter OS X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D97EF7AC1CFCB01100F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter OS X" */;
+			buildPhases = (
+				D97EF7961CFCB01000F6A5EF /* Sources */,
+				D97EF7971CFCB01000F6A5EF /* Frameworks */,
+				D97EF7981CFCB01000F6A5EF /* Headers */,
+				D97EF7991CFCB01000F6A5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftyGameCenter OS X";
+			productName = "SwiftyGameCenter OSX";
+			productReference = D97EF79B1CFCB01000F6A5EF /* SwiftyGameCenter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D97EF7A31CFCB01100F6A5EF /* SwiftyGameCenter OS X Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D97EF7AF1CFCB01100F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter OS X Tests" */;
+			buildPhases = (
+				D97EF7A01CFCB01100F6A5EF /* Sources */,
+				D97EF7A11CFCB01100F6A5EF /* Frameworks */,
+				D97EF7A21CFCB01100F6A5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D97EF7A71CFCB01100F6A5EF /* PBXTargetDependency */,
+			);
+			name = "SwiftyGameCenter OS X Tests";
+			productName = "SwiftyGameCenter OSXTests";
+			productReference = D97EF7A41CFCB01100F6A5EF /* SwiftyGameCenter OS X Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -152,6 +302,18 @@
 					D97EF7661CFCACCA00F6A5EF = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					D97EF77D1CFCAE9F00F6A5EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D97EF7861CFCAE9F00F6A5EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D97EF79A1CFCB01000F6A5EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D97EF7A31CFCB01100F6A5EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = D97EF7571CFCACCA00F6A5EF /* Build configuration list for PBXProject "SwiftyGameCenter" */;
@@ -166,8 +328,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D97EF75C1CFCACCA00F6A5EF /* SwiftyGameCenter */,
-				D97EF7661CFCACCA00F6A5EF /* SwiftyGameCenterTests */,
+				D97EF75C1CFCACCA00F6A5EF /* SwiftyGameCenter iOS */,
+				D97EF7661CFCACCA00F6A5EF /* SwiftyGameCenter iOS Tests */,
+				D97EF77D1CFCAE9F00F6A5EF /* SwiftyGameCenter tvOS */,
+				D97EF7861CFCAE9F00F6A5EF /* SwiftyGameCenter tvOS Tests */,
+				D97EF79A1CFCB01000F6A5EF /* SwiftyGameCenter OS X */,
+				D97EF7A31CFCB01100F6A5EF /* SwiftyGameCenter OS X Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +347,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D97EF7651CFCACCA00F6A5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF77C1CFCAE9F00F6A5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7851CFCAE9F00F6A5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7991CFCB01000F6A5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7A21CFCB01100F6A5EF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,13 +399,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D97EF7791CFCAE9F00F6A5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7831CFCAE9F00F6A5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7961CFCB01000F6A5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97EF7A01CFCB01100F6A5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		D97EF76A1CFCACCA00F6A5EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D97EF75C1CFCACCA00F6A5EF /* SwiftyGameCenter */;
+			target = D97EF75C1CFCACCA00F6A5EF /* SwiftyGameCenter iOS */;
 			targetProxy = D97EF7691CFCACCA00F6A5EF /* PBXContainerItemProxy */;
+		};
+		D97EF78A1CFCAE9F00F6A5EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D97EF77D1CFCAE9F00F6A5EF /* SwiftyGameCenter tvOS */;
+			targetProxy = D97EF7891CFCAE9F00F6A5EF /* PBXContainerItemProxy */;
+		};
+		D97EF7A71CFCB01100F6A5EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D97EF79A1CFCB01000F6A5EF /* SwiftyGameCenter OS X */;
+			targetProxy = D97EF7A61CFCB01100F6A5EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -254,9 +486,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftyGameCenter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yetii.SwiftyGameCenter;
+				PRODUCT_NAME = SwiftyGameCenter;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,8 +532,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftyGameCenter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yetii.SwiftyGameCenter;
+				PRODUCT_NAME = SwiftyGameCenter;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -310,31 +548,34 @@
 		D97EF7721CFCACCA00F6A5EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyGameCenter/Info.plist;
+				INFOPLIST_FILE = "$(inherited)";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.yetii.SwiftyGameCenter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
+				PRODUCT_NAME = "$(inherited)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D97EF7731CFCACCA00F6A5EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyGameCenter/Info.plist;
+				INFOPLIST_FILE = "$(inherited)";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.yetii.SwiftyGameCenter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
+				PRODUCT_NAME = "$(inherited)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -359,6 +600,138 @@
 			};
 			name = Release;
 		};
+		D97EF7901CFCAE9F00F6A5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(inherited)";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		D97EF7911CFCAE9F00F6A5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(inherited)";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		D97EF7931CFCAE9F00F6A5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftyGameCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.yetii.SwiftyGameCenter-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		D97EF7941CFCAE9F00F6A5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftyGameCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.yetii.SwiftyGameCenter-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		D97EF7AD1CFCB01100F6A5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(inherited)";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D97EF7AE1CFCB01100F6A5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(inherited)";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D97EF7B01CFCB01100F6A5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftyGameCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.yetii.SwiftyGameCenter-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D97EF7B11CFCB01100F6A5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftyGameCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.yetii.SwiftyGameCenter-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,7 +744,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D97EF7711CFCACCA00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter" */ = {
+		D97EF7711CFCACCA00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D97EF7721CFCACCA00F6A5EF /* Debug */,
@@ -379,11 +752,43 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		D97EF7741CFCACCA00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenterTests" */ = {
+		D97EF7741CFCACCA00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D97EF7751CFCACCA00F6A5EF /* Debug */,
 				D97EF7761CFCACCA00F6A5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D97EF78F1CFCAE9F00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D97EF7901CFCAE9F00F6A5EF /* Debug */,
+				D97EF7911CFCAE9F00F6A5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D97EF7921CFCAE9F00F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D97EF7931CFCAE9F00F6A5EF /* Debug */,
+				D97EF7941CFCAE9F00F6A5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D97EF7AC1CFCB01100F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter OS X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D97EF7AD1CFCB01100F6A5EF /* Debug */,
+				D97EF7AE1CFCB01100F6A5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D97EF7AF1CFCB01100F6A5EF /* Build configuration list for PBXNativeTarget "SwiftyGameCenter OS X Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D97EF7B01CFCB01100F6A5EF /* Debug */,
+				D97EF7B11CFCB01100F6A5EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
