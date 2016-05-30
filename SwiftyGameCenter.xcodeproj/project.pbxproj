@@ -12,6 +12,18 @@
 		D97EF76D1CFCACCA00F6A5EF /* SwiftyGameCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF76C1CFCACCA00F6A5EF /* SwiftyGameCenterTests.swift */; };
 		D97EF7881CFCAE9F00F6A5EF /* SwiftyGameCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97EF77E1CFCAE9F00F6A5EF /* SwiftyGameCenter.framework */; };
 		D97EF7A51CFCB01100F6A5EF /* SwiftyGameCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97EF79B1CFCB01000F6A5EF /* SwiftyGameCenter.framework */; };
+		D97EF7B31CFCB1B800F6A5EF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7B21CFCB1B800F6A5EF /* Manager.swift */; };
+		D97EF7B61CFCB38F00F6A5EF /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7B51CFCB38F00F6A5EF /* Achievement.swift */; };
+		D97EF7BB1CFCB59500F6A5EF /* AchievementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7BA1CFCB59500F6A5EF /* AchievementsManager.swift */; };
+		D97EF7BC1CFCB92A00F6A5EF /* AchievementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7BA1CFCB59500F6A5EF /* AchievementsManager.swift */; };
+		D97EF7BD1CFCB92B00F6A5EF /* AchievementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7BA1CFCB59500F6A5EF /* AchievementsManager.swift */; };
+		D97EF7BE1CFCD74400F6A5EF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7B21CFCB1B800F6A5EF /* Manager.swift */; };
+		D97EF7BF1CFCD74400F6A5EF /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7B51CFCB38F00F6A5EF /* Achievement.swift */; };
+		D97EF7C01CFCD74500F6A5EF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7B21CFCB1B800F6A5EF /* Manager.swift */; };
+		D97EF7C11CFCD74500F6A5EF /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7B51CFCB38F00F6A5EF /* Achievement.swift */; };
+		D97EF7C31CFCD7A500F6A5EF /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7C21CFCD7A500F6A5EF /* CrossPlatform.swift */; };
+		D97EF7C41CFCD84900F6A5EF /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7C21CFCD7A500F6A5EF /* CrossPlatform.swift */; };
+		D97EF7C51CFCD84A00F6A5EF /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF7C21CFCD7A500F6A5EF /* CrossPlatform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,10 @@
 		D97EF7871CFCAE9F00F6A5EF /* SwiftyGameCenter tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyGameCenter tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97EF79B1CFCB01000F6A5EF /* SwiftyGameCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGameCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97EF7A41CFCB01100F6A5EF /* SwiftyGameCenter OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyGameCenter OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97EF7B21CFCB1B800F6A5EF /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		D97EF7B51CFCB38F00F6A5EF /* Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		D97EF7BA1CFCB59500F6A5EF /* AchievementsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsManager.swift; sourceTree = "<group>"; };
+		D97EF7C21CFCD7A500F6A5EF /* CrossPlatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +141,8 @@
 		D97EF75F1CFCACCA00F6A5EF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D97EF7B21CFCB1B800F6A5EF /* Manager.swift */,
+				D97EF7B41CFCB37B00F6A5EF /* Mappings */,
 				D97EF7951CFCAEEE00F6A5EF /* Supporting Files */,
 			);
 			name = Source;
@@ -144,10 +162,20 @@
 		D97EF7951CFCAEEE00F6A5EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D97EF7C21CFCD7A500F6A5EF /* CrossPlatform.swift */,
 				D97EF7601CFCACCA00F6A5EF /* SwiftyGameCenter.h */,
 				D97EF7621CFCACCA00F6A5EF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D97EF7B41CFCB37B00F6A5EF /* Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				D97EF7B51CFCB38F00F6A5EF /* Achievement.swift */,
+				D97EF7BA1CFCB59500F6A5EF /* AchievementsManager.swift */,
+			);
+			name = Mappings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +416,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97EF7B31CFCB1B800F6A5EF /* Manager.swift in Sources */,
+				D97EF7C31CFCD7A500F6A5EF /* CrossPlatform.swift in Sources */,
+				D97EF7BB1CFCB59500F6A5EF /* AchievementsManager.swift in Sources */,
+				D97EF7B61CFCB38F00F6A5EF /* Achievement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +435,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97EF7BC1CFCB92A00F6A5EF /* AchievementsManager.swift in Sources */,
+				D97EF7C41CFCD84900F6A5EF /* CrossPlatform.swift in Sources */,
+				D97EF7C01CFCD74500F6A5EF /* Manager.swift in Sources */,
+				D97EF7C11CFCD74500F6A5EF /* Achievement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +453,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97EF7BD1CFCB92B00F6A5EF /* AchievementsManager.swift in Sources */,
+				D97EF7C51CFCD84A00F6A5EF /* CrossPlatform.swift in Sources */,
+				D97EF7BE1CFCD74400F6A5EF /* Manager.swift in Sources */,
+				D97EF7BF1CFCD74400F6A5EF /* Achievement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
