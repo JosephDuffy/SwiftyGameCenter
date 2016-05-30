@@ -24,6 +24,27 @@ public class AchievementsManager {
     private init() {}
 
     /**
+     Adds the provide achievement to the cache. This method can be used when
+     an achievement is manually created. The provided achievement must have
+     an identifier and must not already be in the cache
+     
+     - parameter achievement: The achievement to add to the cache
+     
+     - returns: `true` if added to the cache, otherwise `false`
+    */
+    public func addAchievementToCache(achievement: Achievement) -> Bool {
+        guard let identifier = achievement.identifier else { return false }
+
+        if achievementsCache[identifier] != nil {
+            achievementsCache[identifier] = achievement
+
+            return true
+        } else {
+            return false
+        }
+    }
+
+    /**
      Loads the achievements from Game Center. Loading is performed in the background and
      the completion handler will be called from the main thread. Achievements without an
      identifier are ignored. This function will build the achievements cache that is used
