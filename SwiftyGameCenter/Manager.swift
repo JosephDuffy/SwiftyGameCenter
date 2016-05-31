@@ -19,6 +19,10 @@ public class Manager {
     /// loaded once the local player is authenticated
     public var autoLoadAchievements = true
 
+    /// If set to true (default), achievement descriptionss will be
+    /// loaded once the local player is authenticated
+    public var autoLoadAchievementDescriptionss = true
+
     /// A flag that is set to true while the local player is
     /// being authenticated
     public private(set) var authenticatingPlayer = false
@@ -66,6 +70,10 @@ public class Manager {
 
                 if self.autoLoadAchievements {
                     AchievementsManager.sharedInstance.loadAchievements(nil)
+                }
+
+                if self.autoLoadAchievementDescriptionss {
+                    AchievementsManager.sharedInstance.loadAchievementDescriptions(nil)
                 }
 
                 completionHandler?(nil)

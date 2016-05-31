@@ -12,7 +12,7 @@ import GameKit
 /// to the underlying `GKAchievement`
 public class Achievement {
     /// The underlying `GKAchievement`
-    let _achievement: GKAchievement
+    public let _achievement: GKAchievement
 
     internal(set) var reportStatus: AchievementReportStatus = .NotPending
 
@@ -89,6 +89,14 @@ public class Achievement {
     public var player: GKPlayer {
         get {
             return _achievement.player
+        }
+    }
+
+    public var description: AchievementDescription? {
+        get {
+            guard let identifier = identifier else { return nil }
+
+            return AchievementsManager.sharedInstance.achievementDescriptionsCache[identifier]
         }
     }
 

@@ -10,8 +10,12 @@
 import UIKit
 
 public typealias ViewController = UIViewController
+public typealias Image = UIImage
+
 #elseif os(OSX)
 import AppKit
 
 public typealias ViewController = NSViewController
+public typealias Image = NSImage
+
 #endif

@@ -18,7 +18,13 @@ public class AchievementsManager {
     private(set) var loadingAchievements = false
 
     /// A private cache of the loaded achievements, indexed by identifier
-    private var achievementsCache: [String : Achievement] = [:]
+    private(set) var achievementsCache: [String : Achievement] = [:]
+
+    /// A flag that indicates if achievement descriptions are currently being loaded
+    private(set) var loadingAchievementDescriptions = false
+
+    /// A private cache of the loaded achievement descriptions, indexed by identifier
+    private(set) var achievementDescriptionsCache: [String : AchievementDescription] = [:]
 
     /// Private init to ensure only 1 instance is created
     private init() {}
@@ -85,7 +91,56 @@ public class AchievementsManager {
                 }
             }()
 
+            self.loadingAchievements = false
+
             completionHandler?(loadedAchievments, errorWrapper)
+        }
+    }
+
+    /**
+     Loads the achievement descriptions from Game Center. Loading is performed in the background and
+     the completion handler will be called from the main thread. Descriptions without an
+     identifier are ignored. This function will build the achievement descriptions cache that is used
+     when retrieving achievement descriptions by identifier.
+
+     - parameter completionHandler: The closure to call when the descriptions are loaded.
+
+     - SeeAlso: `GKAchievementDescription.loadAchievementDescriptionsWithCompletionHandler`
+     */
+    public func loadAchievementDescriptions(completionHandler: (([AchievementDescription]?, LoadAchievementsError?) -> Void)?) {
+        guard !loadingAchievementDescriptions else {
+            completionHandler?(nil, LoadAchievementsError.AlreadyLoading)
+
+            return
+        }
+
+        loadingAchievementDescriptions = true
+        achievementDescriptionsCache = [:]
+
+        GKAchievementDescription.loadAchievementDescriptionsWithCompletionHandler { [weak self] (descriptions, error) in
+            guard let `self` = self else { return }
+
+            if let descriptions = descriptions {
+                for description in descriptions {
+                    guard let identifier = description.identifier else { continue }
+
+                    self.achievementDescriptionsCache[identifier] = AchievementDescription(achievementDescription: description)
+                }
+            }
+
+            let loadedAchievmentDescriptionss = Array(self.achievementDescriptionsCache.values)
+
+            let errorWrapper: LoadAchievementsError? = {
+                if let error = error {
+                    return LoadAchievementsError.GameCenterError(underlyingError: error)
+                } else {
+                    return nil
+                }
+            }()
+
+            self.loadingAchievementDescriptions = false
+            
+            completionHandler?(loadedAchievmentDescriptionss, errorWrapper)
         }
     }
 
